@@ -1,4 +1,5 @@
 import Link from "next/link"
+import Navmenu from "./navmenu"
 
 export default function Header({hero}) {
     hero = '/images/' + (hero || 'orb.jpg')
@@ -13,6 +14,8 @@ export default function Header({hero}) {
           Next.js starter
         </a></Link>
       </p>
+
+      <Navmenu/>
 
       <figure>
         <img src={ hero } width="400" height="300" alt="decoration" />
