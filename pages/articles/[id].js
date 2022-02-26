@@ -20,3 +20,23 @@ export async function getStaticProps({params}) {
         }
     }
 }
+
+export default function Article({postData}) {
+    const html = `
+    <h1>${ postData.title }</h1>
+    <p class="time"><time datetime="${ postData.dateYMD }">${ postData.dateFriendly }</time></p>
+    <p class="words">${ postData.wordcount }</p>
+    ${ postData.html }
+  `;
+
+  return (
+    <Layout hero="phone.jpg">
+      <Head>
+        <title>{ postData.title }</title>
+        <meta name="description" content={ postData.description } />
+      </Head>
+
+      <article dangerouslySetInnerHTML={{ __html: html }} />
+    </Layout>
+  );
+}
