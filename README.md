@@ -1,4 +1,11 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+
+# Blog App, built with Next.js
+
+I use this project to learn following Next.js features:
+
+- dynamic routes 
+- pages
+
 
 ## Getting Started
 
