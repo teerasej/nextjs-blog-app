@@ -1,3 +1,4 @@
+import Link from "next/link"
 
 export default function Header({hero}) {
     hero = '/images/' + (hero || 'orb.jpg')
